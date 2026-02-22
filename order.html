@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Order Butt Fire Sauce">
+    <title>Butt Fire Sauce | Order Now</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="glass-nav sticky">
+        <div class="logo">
+            <img src="assets/logo.png" alt="Butt Fire Sauce Logo" class="nav-logo-img">
+            Butt Fire Sauce
+        </div>
+        <nav>
+            <a href="index.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="order.html" class="active">Order Now</a>
+        </nav>
+        <div class="mobile-menu-btn" id="mobile-menu-btn">☰</div>
+    </header>
+
+    <main class="fade-in">
+        <section class="order-hero reveal active">
+            <h1 class="gradient-text text-center">Secure Your Supply</h1>
+            <p class="subtitle text-center">Warning: Stock is highly limited due to intense demand.</p>
+        </section>
+
+        <section class="order-section container">
+            <div class="order-container glass-card reveal delay-1">
+                <div class="order-image-col">
+                    <div class="glow-box">
+                        <img src="assets/real_bottle.jpg" alt="Butt Fire Sauce Bottle" class="order-img">
+                    </div>
+                    <div class="price-tag text-center">
+                        <h2 id="total-price">$7.99</h2>
+                        <span class="per-bottle" style="display: block; margin-top: -10px;">$7.99 / bottle</span>
+                    </div>
+                </div>
+                <div class="order-form-col">
+                    <h2>Checkout Form</h2>
+                    <form class="order-form" id="order-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="quantity">Quantity</label>
+                            <div class="quantity-selector">
+                                <button type="button" id="qty-minus" class="qty-btn">-</button>
+                                <input type="number" id="quantity" value="1" min="1" required readonly>
+                                <button type="button" id="qty-plus" class="qty-btn">+</button>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group flex-2">
+                                <label for="cc">Card Number</label>
+                                <input type="text" id="cc" placeholder="**** **** **** ****" required>
+                            </div>
+                            <div class="form-group flex-1">
+                                <label for="cvc">CVC</label>
+                                <input type="text" id="cvc" placeholder="***" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="cta-button full-width mt-1">Place Order</button>
+                    </form>
+                    <div id="success-msg" class="hidden success-message glass-card">
+                        <h3 class="gradient-text">🔥 Order Confirmed! 🔥</h3>
+                        <p>Prepare your tastebuds, the inferno is on its way.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="social-links">
+            <a href="#" target="_blank">Instagram</a>
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">TikTok</a>
+            <a href="#" target="_blank">YouTube</a>
+        </div>
+        <p>&copy; 2026 Butt Fire Sauce Co. All rights reserved. Play with fire responsibly.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
